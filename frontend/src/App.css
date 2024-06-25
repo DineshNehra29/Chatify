@@ -1,0 +1,230 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+.join-chat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.join-chat h1  {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: aqua;
+}
+
+
+
+.join-chat input {
+  width: 210px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #43a047;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.join-chat button {
+  width: 225px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: #43a047;
+  color: #fff;
+  cursor: pointer;
+}
+
+.join-chat button:hover {
+  background: #2e7d32;
+}
+
+.chat {
+  width: 40%;
+  height: 60%;
+}
+
+.chat p {
+  margin: 0;
+}
+.chat .chat-head {
+  height: 45px;
+  border-radius: 5px;
+  background: aqua;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.chat .chat-head h1 {
+ text-align: center;
+  color: black;
+  font-weight: 700;
+ 
+}
+
+.chat .allmessages {
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 5px;
+  max-height: 500px;
+}
+.chat .allmessages  {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat .allmessages::-webkit-scrollbar {
+  display: none;
+}
+.chat .allmessages .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.chat .allmessages .message .message-content  {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 190px;
+  min-width: 80px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.chat .allmessages {
+  background-image: url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  object-fit: contain;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+.message-content>h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 3px;
+  text-align: start;
+}
+
+#you .message-content {
+  justify-content: flex-end;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+.author{
+  text-align: start;
+  font-size: 12px;
+  color: rgb(36, 35, 35);
+  height: 15px;
+  font-weight: bolder;
+  padding-top: 5px;
+}
+
+.time{
+  text-align: end;
+  font-size: 10px;
+  height: 15px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat .allmessages .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.chat .send {
+  height: 40px;
+  
+  border-top: none;
+  display: flex;
+}
+
+.chat .send input {
+  height: 100%;
+  flex: 85%;
+  border-radius: 5px;
+  padding: 0 0.7em;
+  font-size: 1em;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.chat .send button {
+ border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  background: aqua;
+  outline: none;
+  font-size: 25px;
+  color: white;
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+.chat .send button:hover {
+  color: #43a047;
+}
+.hide {
+  opacity: 0 !important;
+}
+
+
+
+
