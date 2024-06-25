@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       {!showchat ? (
         <div className='join-chat'>
-          <h1>Join A Chat...</h1>
+          <h1>Join A Chat</h1>
 
           
           <input className="name"
@@ -40,7 +40,7 @@ function App() {
             placeholder="enter room id..."
             onChange={(e) => { setRoom(e.target.value); }} ></input>
 
-          <button onClick={joinRoom}>Join Room...</button> </div>) :
+          <button onClick={joinRoom}>Join Room</button> </div>) :
 
         (<Chat socket={socket} name={name} room={room} />)}
     </div>
